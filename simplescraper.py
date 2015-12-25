@@ -1,7 +1,7 @@
 import urllib
 from BeautifulSoup import *
 
-url = raw_input("Enter URL:")
+url = raw_input('Enter URL:')
 html = urllib.urlopen(url).read()
 soup = BeautifulSoup(html)
 
@@ -13,5 +13,5 @@ for t in tags:
 	summ += int(t.contents[0])
 	count += 1
 
-print "Count:", count
-print "Sum:", summ
+print 'Count:', count
+print 'Sum:', summ
